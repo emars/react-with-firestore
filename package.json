@@ -1,0 +1,38 @@
+{
+  "name": "react-with-firestore",
+  "version": "0.1.0",
+  "description": "an HOC to pass data from Firestore to React Components",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "",
+    "build":
+      "rm -fR ./dist/* && babel src --presets babel-preset-es2015 --plugins transform-react-jsx,transform-object-rest-spread --out-dir dist",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emars/react-with-firestore.git"
+  },
+  "keywords": ["Firebase", "Firestore", "React"],
+  "author": "ERmarsland@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/emars/react-with-firestore/issues"
+  },
+  "peerDependencies": {
+    "firebase": "^4.6.1",
+    "react": "^16.0.0"
+  },
+  "dependencies": {
+    "firebase": "^4.6.1",
+    "react": "^16.0.0"
+  },
+  "homepage": "https://github.com/emars/react-with-firestore#readme",
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1"
+  }
+}
